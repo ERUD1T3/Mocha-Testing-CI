@@ -2,14 +2,14 @@
   "name": "mocha-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "app.js",
   "directories": {
     "doc": "docs",
     "test": "test"
   },
   "scripts": {
-    "start": "node src/app.js",
-    "test": "test"
+    "start": "node app.js",
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
