@@ -1,0 +1,24 @@
+{
+  "name": "mocha-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1",
+    "request": "^2.88.2"
+  }
+}
