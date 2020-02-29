@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-02-29T20:36:43.335Z",
+    "end": "2020-02-29T20:36:43.342Z",
+    "duration": 7,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e0ad767c-6fa5-4a58-a459-9b46462fc8eb",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d3ce9d5d-1f68-4f28-a00a-bd5c6a7b2738",
+          "title": "example",
+          "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/example.js",
+          "file": "/test/example.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "e3949753-13a7-4633-911b-4d5d0d1ccd02",
+              "title": "pluralize",
+              "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/example.js",
+              "file": "/test/example.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "keeps singular when count is 1",
+                  "fullTitle": "example pluralize keeps singular when count is 1",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(pluralize(1, 'cat'), '1 cat');",
+                  "err": {},
+                  "uuid": "bbd17739-9a5a-4c9d-b739-c5696d6bac89",
+                  "parentUUID": "e3949753-13a7-4633-911b-4d5d0d1ccd02",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "bbd17739-9a5a-4c9d-b739-c5696d6bac89"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.1.0"
+    }
+  }
+}
