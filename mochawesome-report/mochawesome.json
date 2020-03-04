@@ -2,14 +2,14 @@
   "stats": {
     "suites": 2,
     "tests": 2,
-    "passes": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2020-03-04T03:15:00.159Z",
-    "end": "2020-03-04T03:15:00.174Z",
-    "duration": 15,
+    "failures": 1,
+    "start": "2020-03-04T23:26:17.360Z",
+    "end": "2020-03-04T23:26:17.368Z",
+    "duration": 8,
     "testsRegistered": 2,
-    "passPercent": 100,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7682b273-11fa-4ce9-82de-924f804f2981",
+      "uuid": "aa68213d-fa98-48ab-9e3a-75b6c0a54b3e",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c5d401a5-8a6d-48e5-b726-8b54f6310ffb",
+          "uuid": "0ab814b8-bfeb-4d90-9ec7-43f32e693245",
           "title": "Testing pluralize in example.js",
           "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/example.test.js",
           "file": "/test/example.test.js",
@@ -38,7 +38,7 @@
               "title": "keeps singular when count is 1",
               "fullTitle": "Testing pluralize in example.js keeps singular when count is 1",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,26 +47,26 @@
               "context": null,
               "code": "assert.strictEqual(pluralize(1, 'cat'), '1 cat');",
               "err": {},
-              "uuid": "8366583c-b5f6-4bd2-9d9c-735708bb6bb4",
-              "parentUUID": "c5d401a5-8a6d-48e5-b726-8b54f6310ffb",
+              "uuid": "47ff5721-b411-400b-9219-486e18fd1b5b",
+              "parentUUID": "0ab814b8-bfeb-4d90-9ec7-43f32e693245",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8366583c-b5f6-4bd2-9d9c-735708bb6bb4"
+            "47ff5721-b411-400b-9219-486e18fd1b5b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "77ce0c0e-0d74-41b6-9a1e-27f5d5388c6b",
+          "uuid": "6196e901-1b88-4cb4-a089-4e6875d7b781",
           "title": "Testing main page in app.js",
           "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/hello.test.js",
           "file": "/test/hello.test.js",
@@ -77,29 +77,33 @@
               "title": "Main page message",
               "fullTitle": "Testing main page in app.js Main page message",
               "timedOut": false,
-              "duration": 3,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "let msg = hellofn()\nexpect(msg).to.equal('Hello World! from Dev Server');\ndone();",
-              "err": {},
-              "uuid": "1afd4357-ab5b-4171-98e7-d9ffbe6a3d6b",
-              "parentUUID": "77ce0c0e-0d74-41b6-9a1e-27f5d5388c6b",
+              "err": {
+                "message": "AssertionError: expected 'Hello World! from Mars' to equal 'Hello World! from Dev Server'",
+                "estack": "AssertionError: expected 'Hello World! from Mars' to equal 'Hello World! from Dev Server'\n    at Context.it (test/hello.test.js:8:24)",
+                "diff": "- Hello World! from Mars\n+ Hello World! from Dev Server\n"
+              },
+              "uuid": "1d60bc92-11a6-4ae6-9d18-55b9b2d25000",
+              "parentUUID": "6196e901-1b88-4cb4-a089-4e6875d7b781",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "1afd4357-ab5b-4171-98e7-d9ffbe6a3d6b"
+          "passes": [],
+          "failures": [
+            "1d60bc92-11a6-4ae6-9d18-55b9b2d25000"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
