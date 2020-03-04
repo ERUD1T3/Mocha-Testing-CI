@@ -1,11 +1,13 @@
 //Load express module with `require` directive
-var express = require('express')
-var app = express()
+const express = require('express')
+const hellofn = require('./lib/hello')
+const app = express()
 
 //Define request response in root URL (/)
 app.get('/', (req, res) => {
     // res.send('Hello World from Dev')
-    res.send('Hello World')
+    let msg = hellofn()
+    res.send(msg)
 })
 
 

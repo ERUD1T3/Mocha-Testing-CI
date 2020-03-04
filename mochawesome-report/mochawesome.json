@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-03-04T02:57:00.066Z",
-    "end": "2020-03-04T02:57:00.085Z",
-    "duration": 19,
+    "start": "2020-03-04T03:15:00.159Z",
+    "end": "2020-03-04T03:15:00.174Z",
+    "duration": 15,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "61ada675-a391-4fed-b72e-541801e64c8a",
+      "uuid": "7682b273-11fa-4ce9-82de-924f804f2981",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,46 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "99005621-7f09-4f95-9fda-74f227d5ff59",
-          "title": "Testing mian page in app.js",
-          "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/app.test.js",
-          "file": "/test/app.test.js",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Main page content",
-              "fullTitle": "Testing mian page in app.js Main page content",
-              "timedOut": false,
-              "duration": 13,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "request('http://localhost:8080', function (error, response, body) {\n    expect(body).to.equal('Hello World');\n    done();\n});",
-              "err": {},
-              "uuid": "e5efe1c1-6e0c-4604-a0b7-fcfeb7d31075",
-              "parentUUID": "99005621-7f09-4f95-9fda-74f227d5ff59",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "e5efe1c1-6e0c-4604-a0b7-fcfeb7d31075"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 13,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        },
-        {
-          "uuid": "bde2008a-be34-4fc6-98a6-de458e24591d",
+          "uuid": "c5d401a5-8a6d-48e5-b726-8b54f6310ffb",
           "title": "Testing pluralize in example.js",
           "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/example.test.js",
           "file": "/test/example.test.js",
@@ -77,7 +38,7 @@
               "title": "keeps singular when count is 1",
               "fullTitle": "Testing pluralize in example.js keeps singular when count is 1",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -86,20 +47,59 @@
               "context": null,
               "code": "assert.strictEqual(pluralize(1, 'cat'), '1 cat');",
               "err": {},
-              "uuid": "9ec47438-7156-4371-8fa2-31b611c01af3",
-              "parentUUID": "bde2008a-be34-4fc6-98a6-de458e24591d",
+              "uuid": "8366583c-b5f6-4bd2-9d9c-735708bb6bb4",
+              "parentUUID": "c5d401a5-8a6d-48e5-b726-8b54f6310ffb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9ec47438-7156-4371-8fa2-31b611c01af3"
+            "8366583c-b5f6-4bd2-9d9c-735708bb6bb4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "77ce0c0e-0d74-41b6-9a1e-27f5d5388c6b",
+          "title": "Testing main page in app.js",
+          "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/hello.test.js",
+          "file": "/test/hello.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Main page message",
+              "fullTitle": "Testing main page in app.js Main page message",
+              "timedOut": false,
+              "duration": 3,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let msg = hellofn()\nexpect(msg).to.equal('Hello World! from Dev Server');\ndone();",
+              "err": {},
+              "uuid": "1afd4357-ab5b-4171-98e7-d9ffbe6a3d6b",
+              "parentUUID": "77ce0c0e-0d74-41b6-9a1e-27f5d5388c6b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1afd4357-ab5b-4171-98e7-d9ffbe6a3d6b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
