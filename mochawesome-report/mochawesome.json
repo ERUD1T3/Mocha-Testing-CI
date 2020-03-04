@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 2,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-02-29T20:36:43.335Z",
-    "end": "2020-02-29T20:36:43.342Z",
-    "duration": 7,
-    "testsRegistered": 1,
+    "start": "2020-03-04T02:57:00.066Z",
+    "end": "2020-03-04T02:57:00.085Z",
+    "duration": 19,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e0ad767c-6fa5-4a58-a459-9b46462fc8eb",
+      "uuid": "61ada675-a391-4fed-b72e-541801e64c8a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,55 +27,75 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d3ce9d5d-1f68-4f28-a00a-bd5c6a7b2738",
-          "title": "example",
-          "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/example.js",
-          "file": "/test/example.js",
+          "uuid": "99005621-7f09-4f95-9fda-74f227d5ff59",
+          "title": "Testing mian page in app.js",
+          "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/app.test.js",
+          "file": "/test/app.test.js",
           "beforeHooks": [],
           "afterHooks": [],
-          "tests": [],
-          "suites": [
+          "tests": [
             {
-              "uuid": "e3949753-13a7-4633-911b-4d5d0d1ccd02",
-              "title": "pluralize",
-              "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/example.js",
-              "file": "/test/example.js",
-              "beforeHooks": [],
-              "afterHooks": [],
-              "tests": [
-                {
-                  "title": "keeps singular when count is 1",
-                  "fullTitle": "example pluralize keeps singular when count is 1",
-                  "timedOut": false,
-                  "duration": 0,
-                  "state": "passed",
-                  "speed": "fast",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "assert.strictEqual(pluralize(1, 'cat'), '1 cat');",
-                  "err": {},
-                  "uuid": "bbd17739-9a5a-4c9d-b739-c5696d6bac89",
-                  "parentUUID": "e3949753-13a7-4633-911b-4d5d0d1ccd02",
-                  "isHook": false,
-                  "skipped": false
-                }
-              ],
-              "suites": [],
-              "passes": [
-                "bbd17739-9a5a-4c9d-b739-c5696d6bac89"
-              ],
-              "failures": [],
-              "pending": [],
-              "skipped": [],
-              "duration": 0,
-              "root": false,
-              "rootEmpty": false,
-              "_timeout": 2000
+              "title": "Main page content",
+              "fullTitle": "Testing mian page in app.js Main page content",
+              "timedOut": false,
+              "duration": 13,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "request('http://localhost:8080', function (error, response, body) {\n    expect(body).to.equal('Hello World');\n    done();\n});",
+              "err": {},
+              "uuid": "e5efe1c1-6e0c-4604-a0b7-fcfeb7d31075",
+              "parentUUID": "99005621-7f09-4f95-9fda-74f227d5ff59",
+              "isHook": false,
+              "skipped": false
             }
           ],
-          "passes": [],
+          "suites": [],
+          "passes": [
+            "e5efe1c1-6e0c-4604-a0b7-fcfeb7d31075"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bde2008a-be34-4fc6-98a6-de458e24591d",
+          "title": "Testing pluralize in example.js",
+          "fullFile": "/home/erud1t3/Desktop/College/Spring2020/Software-Testing-2/Assignments/Mocha-Testing-CI/test/example.test.js",
+          "file": "/test/example.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "keeps singular when count is 1",
+              "fullTitle": "Testing pluralize in example.js keeps singular when count is 1",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.strictEqual(pluralize(1, 'cat'), '1 cat');",
+              "err": {},
+              "uuid": "9ec47438-7156-4371-8fa2-31b611c01af3",
+              "parentUUID": "bde2008a-be34-4fc6-98a6-de458e24591d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9ec47438-7156-4371-8fa2-31b611c01af3"
+          ],
           "failures": [],
           "pending": [],
           "skipped": [],
